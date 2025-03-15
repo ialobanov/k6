@@ -14,7 +14,7 @@ export const options = {
 }
 
 export default function() {
-  const result = http.get('http://10.72.55.133:8000');
+  const result = http.get('https://quickpizza.grafana.com/');
   check(result, {
     'http response status code is 200': r => r.status === 200,
   });
