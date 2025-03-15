@@ -15,4 +15,4 @@ jobs:
       - name: Run k6 local test
         uses: grafana/run-k6-action@v1
         with:
-          filename: test.js
+          path: test.js
