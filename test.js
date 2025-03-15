@@ -5,7 +5,7 @@ import { check } from 'k6';
 const failures = new Rate('falied_requests');
 
 export const options = {
-  vus: 10,
+  vus: 1000,
   duration: '10s',
   thresholds: {
     http_req_failed: ['rate<=0'],
