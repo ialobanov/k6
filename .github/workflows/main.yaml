@@ -1,0 +1,14 @@
+name: Load testing workflow
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    name: Run load test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Run k6 local test
+        uses: k6io/action@v0.4
+        with:
+          filename: test.js
