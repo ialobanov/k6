@@ -13,7 +13,7 @@ export const options = {
       preAllocatedVUs: 10, // how large the initial pool of VUs would be
       maxVUs: 400, // if the preAllocatedVUs are not enough, we can initialize more
       stages: [
-        { target: 1500, duration: '3m' }
+        { target: 1500, duration: '5m' }
       ],
     },
   },
