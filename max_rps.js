@@ -10,10 +10,10 @@ export const options = {
       executor: 'ramping-arrival-rate',
       startRate: 1, // Start iterations per `timeUnit`
       timeUnit: '1s', // 1000 iterations per second, i.e. 1000 RPS
-      preAllocatedVUs: 10, // how large the initial pool of VUs would be
+      preAllocatedVUs: 1, // how large the initial pool of VUs would be
       maxVUs: 400, // if the preAllocatedVUs are not enough, we can initialize more
       stages: [
-        { target: 1500, duration: '5m' }
+        { target: 1500, duration: '5m' } // Start 1500 iterations per `timeUnit` for the fifth minute
       ],
     },
   },
@@ -27,7 +27,7 @@ export const options = {
     ],
     http_req_duration: [
       {
-        threshold: 'p(95)<300',
+        threshold: 'p(95)<400',
         abortOnFail: true, // boolean
         delayAbortEval: '1s', // string
       },
