@@ -9,11 +9,11 @@ export const options = {
     constants: {
       executor: 'ramping-arrival-rate',
       startRate: 1, // Start iterations per `timeUnit`
-      timeUnit: '1s', // 1000 iterations per second, i.e. 1000 RPS
+      timeUnit: '1s', // 1 iteration per second, i.e. 1 RPS
       preAllocatedVUs: 1, // how large the initial pool of VUs would be
       maxVUs: 550, // if the preAllocatedVUs are not enough, we can initialize more
       stages: [
-        { target: 1200, duration: '5m' } // Start 1500 iterations per `timeUnit` for the fifth minute
+        { target: 1200, duration: '5m' } // Start 1200 iterations per `timeUnit` for the fifth minute
       ],
     },
   },
