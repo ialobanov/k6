@@ -11,9 +11,9 @@ export const options = {
       startRate: 1, // Start iterations per `timeUnit`
       timeUnit: '1s', // 1000 iterations per second, i.e. 1000 RPS
       preAllocatedVUs: 1, // how large the initial pool of VUs would be
-      maxVUs: 400, // if the preAllocatedVUs are not enough, we can initialize more
+      maxVUs: 550, // if the preAllocatedVUs are not enough, we can initialize more
       stages: [
-        { target: 1500, duration: '5m' } // Start 1500 iterations per `timeUnit` for the fifth minute
+        { target: 1200, duration: '5m' } // Start 1500 iterations per `timeUnit` for the fifth minute
       ],
     },
   },
