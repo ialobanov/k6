@@ -22,14 +22,14 @@ export const options = {
       {
         threshold: 'rate<=0',
         abortOnFail: true, // boolean
-        delayAbortEval: '1s', // string
+        //delayAbortEval: '1s', // string
       },
     ],
     http_req_duration: [
       {
         threshold: 'p(95)<400',
         abortOnFail: true, // boolean
-        delayAbortEval: '1s', // string
+        //delayAbortEval: '1s', // string
       },
     ],
   },
