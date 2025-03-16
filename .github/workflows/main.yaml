@@ -1,5 +1,5 @@
 name: Load testing workflow
-on: [push, fork]
+on: [fork]
 
 jobs:
   test:
